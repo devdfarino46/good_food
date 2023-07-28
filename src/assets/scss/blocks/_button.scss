@@ -1,0 +1,15 @@
+.button {
+    display: inline-flex;
+    padding: 16px 32px;
+    border-radius: 100ch;
+    background: #FF9401;
+    width: max-content;
+    height: max-content;
+
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    text-transform: capitalize;
+    filter: drop-shadow(0px 20px 40px rgba(255, 148, 1, 0.20));
+}

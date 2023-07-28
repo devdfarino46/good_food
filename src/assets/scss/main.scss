@@ -6,12 +6,69 @@
 
 @include init;
 
+.section {
+    position: relative;
+
+    &_bg_gradient {
+        background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0.00) 100%);
+    }
+
+    &__title {
+        color: $colorOrange;
+        font-family: Gilroy;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px; /* 125% */
+    
+        &._line_leftbottom {
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 27px;
+                
+                border-bottom: 1px solid $colorOrange;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__title-large {
+        color: #2E2E2E;
+        font-family: Gilroy;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 60px; /* 115.385% */
+    }
+
+    &__descr {
+        color: $colorPrimary;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: 160%; /* 32px */
+    }
+}
+
+.bg-decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    &__image {
+        position: absolute;
+    }
+}
+
 // Block import
 @import 'blocks/header';
-@import 'blocks/footer';
-@import 'blocks/section';
-@import 'blocks/hero';
-@import 'blocks/logo';
 @import 'blocks/nav';
+@import 'blocks/footer';
 @import 'blocks/button';
-@import 'blocks/card';
+@import 'blocks/logo';
+@import 'blocks/service';
+@import 'blocks/hero';
+@import 'blocks/about';
+@import 'blocks/features';

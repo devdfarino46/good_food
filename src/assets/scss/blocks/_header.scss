@@ -1,0 +1,19 @@
+.header {
+    padding: 46px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        align-self: flex-end;
+    }
+
+    @media (max-width: 420px) {
+        &__nav .nav__list {
+            gap: 38px;
+        }
+    }
+}

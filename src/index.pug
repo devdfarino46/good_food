@@ -1,2 +1,160 @@
 include _mixins.pug
 
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content="The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the faire.")
+        title F.palace
+        link(rel="stylesheet", href="assets/css/main.min.css")
+        link(rel="shortcut icon", href="assets/img/logo.svg", type="image/x-icon")
+    body 
+        .wrapper
+            header.section.header
+                .container.header__container
+                    .logo
+                        +image('logo.svg', 'Logo', 'logo__icon', '25', '25')
+                        p.logo__label F.palace
+
+                    nav.nav.header__nav
+                        ul.nav__list
+                            li.nav__item
+                                button(type="submit", title='Search') 
+                                    +svgIcon('search', 'nav__item-icon', '24', '24')
+                            li.nav__item.nav__item_indicator
+                                button(title='Cart') 
+                                    +svgIcon('cart', 'nav__item-icon', '19', '17')
+                            li.nav__item
+                                button(title='Menu') 
+                                    +svgIcon('menu', 'nav__item-icon', '20', '17')
+
+            main.page
+                section.section.hero
+                    .container.hero__container
+                        .bg-decor
+                            +image('bg-decor/hero.webp', '', 'bg-decor__image')
+
+                        h2.section__title._line_leftbottom.hero__subtitle Restaurant
+                        h1.hero__title 
+                            | Good food #[br]
+                            | Good mood
+                        p.section__descr.hero__descr
+                            | The food palace is an neighborhood restaurent 
+                            | serving seasonal global cuisine driven by the faire.
+                        
+                        a.button.hero__btn(href="#") Explore food menu
+
+                        ul.hero__social-list
+                            li.hero__social-item
+                                a.hero__social-link(href="$", title="facebook")
+                                    +svgIcon('facebook', 'hero__social-icon', '9', '16')
+                            li.hero__social-item
+                                a.hero__social-link(href="$", title="insta")
+                                    +svgIcon('insta', 'hero__social-icon', '16', '16')
+                            li.hero__social-item
+                                a.hero__social-link(href="$", title="twitter")
+                                    +svgIcon('twitter', 'hero__social-icon', '19', '16')
+
+                section.section.section_bg_gradient.about
+                     .container.about__container
+                        .bg-decor
+                            +image('bg-decor/about.webp', '', 'bg-decor__image')
+                        .about__main-wrapper
+                            h2.section__title.about__title About us
+                            p.section__title-large.about__title-large Simple Way of Eating Delicious
+                            p.section__descr.about__descr
+                                | Keep healthy food readily available. When you get 
+                                | hungry, you’re more likely to eat the first thing 
+                                | you see on the counter or in the
+                            a.button(href="#") Explore our story
+
+                section.section.features
+                    .container.features__container
+                        h2.section__title.features__title Features
+                        p.section__title-large.features__title-large Our Awesome Services
+
+                        ul.features__services-list
+                            li.service
+                                +image('services/food.webp', 'Food', 'service__image', '90', '116')
+                                p.service__title Quality Food
+                                p.service__descr 
+                                    | Keep healthy food readily available. 
+                                    | When you get hungry, you’re more likely to 
+                            li.service
+                                +image('services/mouth.webp', 'Food', 'service__image', '90', '116')
+                                p.service__title Super Taste
+                                p.service__descr 
+                                    | KeKeep healthy food readily available. 
+                                    | When you get hungry, you’re more likely to 
+                            li.service
+                                +image('services/truck.webp', 'Food', 'service__image', '90', '116')
+                                p.service__title Fast Delivery
+                                p.service__descr 
+                                    | Keep healthy food readily available. 
+                                    | When you get hungry, you’re more likely to 
+
+
+            footer.section.section_bg_gradient.footer
+                .container.footer__container
+                    .footer__main-wrapper
+                        ul.footer__info
+                            li.logo
+                                +image('logo.svg', 'Logo', 'logo__icon', '25', '25')
+                                p.logo__label F.palace
+
+                            li.footer__info-item 
+                                +svgIcon('email', '_icon', '19', '14')
+                                | info@food_palace.com
+                            li.footer__info-item 
+                                +svgIcon('globe', '_icon', '17', '17')
+                                | Www.Food_palace.com
+
+                        .footer__sections
+                            section.footer__section
+                                h3.footer__section-title Our menu
+                                ul.footer__section-list
+                                    li.footer__section-item
+                                        a(href="#") Breakfast
+                                    li.footer__section-item
+                                        a(href="#") Lunce
+                                    li.footer__section-item
+                                        a(href="#") Dinner
+
+                            section.footer__section
+                                h3.footer__section-title Information
+                                ul.footer__section-list
+                                    li.footer__section-item
+                                        a(href="#") about us
+                                    li.footer__section-item
+                                        a(href="#") testimonial
+                                    li.footer__section-item
+                                        a(href="#") event
+
+                            section.footer__section
+                                h3.footer__section-title useful links
+                                ul.footer__section-list
+                                    li.footer__section-item
+                                        a(href="#") services
+                                    li.footer__section-item
+                                        a(href="#") support
+                                    li.footer__section-item
+                                        a(href="#") conditions
+
+                            section.footer__section
+                                h3.footer__section-title Social Handles
+                                ul.footer__section-list
+                                    li.footer__section-item._bolder
+                                        a(href="#") facebook
+                                    li.footer__section-item._bolder
+                                        a(href="#") twitter
+                                    li.footer__section-item._bolder
+                                        a(href="#") youtube
+
+                    p.footer__copyright 
+                        span
+                            | Created with 
+                            +svgIcon('like', '_like-icon', '11', '11')
+                            |
+                            | by  Sajib Das Supriyo for Twinkle Creative. 
+                            | All rights reserved

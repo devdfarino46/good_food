@@ -1,0 +1,122 @@
+.footer {
+    padding: 84px 0;
+    background: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0.00) 100%);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__main-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 47px;
+        gap: 40px 171px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    &__info-item {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 450;
+        line-height: 30px; /* 187.5% */
+        text-transform: lowercase;
+        vertical-align: middle;
+
+        ._icon {
+            margin-inline-end: 13px;
+        }
+    }
+
+    &__sections {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 30px 105px;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        white-space: nowrap;
+
+        &-title {
+            color: #2E2E2E;
+            font-family: Gilroy;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            text-transform: capitalize;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        &-item {
+            color: #6A5C5C;
+            font-size: 18px;
+            font-weight: 450;
+            line-height: 30px; /* 166.667% */
+            text-transform: capitalize;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &._bolder {
+                color: #2E2E2E;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        color: #685D5D;
+        font-size: 12px;
+        font-weight: 450;
+        line-height: 120%; /* 14.4px */
+        text-align: center;
+
+        ._like-icon {
+            fill: transparent;
+            stroke: #FF9401;
+            margin-block-end: -1px;
+        }
+    }
+
+    @media (max-width: 1170px) {
+        &__main-wrapper {
+            flex-direction: column;
+        }
+
+        &__info {
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 800px) {
+        &__sections {
+            grid-template-columns: auto auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__sections {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

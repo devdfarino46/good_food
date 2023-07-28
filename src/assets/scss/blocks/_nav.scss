@@ -1,0 +1,29 @@
+.nav {
+
+    &__list {
+        display: flex;
+        gap: 62px;
+        align-items: center;
+    }
+
+    &__item {
+        &_indicator {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                right: -1px;
+                top: 0;
+                background: #FF9702;
+                border-radius: 100ch;
+            }
+        }
+    }
+
+    &__item-icon {
+        fill: #2E2E2E;
+    }
+}

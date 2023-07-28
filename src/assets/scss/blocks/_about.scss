@@ -1,0 +1,45 @@
+.about {
+    padding: 142px 0;
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__main-wrapper {
+        max-width: 424px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__title-large {
+        margin-bottom: 21px;
+        max-width: 497px;
+    }
+
+    &__descr {
+        margin-bottom: 48px;
+        max-width: 497px;
+    }
+
+    .bg-decor__image {
+        left: -111px;
+        top: 89px;
+    }
+
+    @media (max-width: 1150px) {
+        .bg-decor {
+            display: none;
+        }
+
+        &__container {
+            justify-content: flex-start;
+        }
+
+        &__main-wrapper {
+            max-width: none;
+        }
+    }
+}
