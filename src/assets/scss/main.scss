@@ -1,0 +1,17 @@
+// Base import
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/reset';
+@import 'base/fonts';
+
+@include init;
+
+// Block import
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/section';
+@import 'blocks/hero';
+@import 'blocks/logo';
+@import 'blocks/nav';
+@import 'blocks/button';
+@import 'blocks/card';

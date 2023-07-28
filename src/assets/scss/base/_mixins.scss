@@ -1,0 +1,29 @@
+@mixin init {
+    html,
+    body {
+        background-color: $colorSecond;
+    }
+
+    * {
+        font-family: $fontFamily;
+        font-weight: $fontWeight;
+        font-size: $fontSize;
+        font-style: $fontStyle;
+        line-height: $lineHeight;
+        color: $colorPrimary;
+    }
+
+    .wrapper {
+        overflow: $bodyWrapperOverflow;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: $containerMaxW;
+        min-width: $containerMinW;
+        padding: 0 $containerP;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'Circular Std';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''),
+	url("../font/CircularStd-Book.woff2") format("woff2"),
+	url("../font/CircularStd-Book.woff") format("woff");
+}
+@font-face {
+	font-family: 'Circular Std';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local(''),
+	url("../font/CircularStd-Medium.woff2") format("woff2"),
+	url("../font/CircularStd-Medium.woff") format("woff");
+}
+@font-face {
+	font-family: 'Circular Std';
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: local(''),
+	url("../font/CircularStd-MediumItalic.woff2") format("woff2"),
+	url("../font/CircularStd-MediumItalic.woff") format("woff");
+}
+@font-face {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''),
+	url("../font/Gilroy-Bold.woff2") format("woff2"),
+	url("../font/Gilroy-Bold.woff") format("woff");
+}
+@font-face {
+	font-family: 'Gilroy';
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''),
+	url("../font/Gilroy-BoldItalic.woff2") format("woff2"),
+	url("../font/Gilroy-BoldItalic.woff") format("woff");
+}
+@font-face {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''),
+	url("../font/Gilroy-Extrabold.woff2") format("woff2"),
+	url("../font/Gilroy-Extrabold.woff") format("woff");
+}
+@font-face {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: local(''),
+	url("../font/Gilroy-Semibold.woff2") format("woff2"),
+	url("../font/Gilroy-Semibold.woff") format("woff");
+}
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local(''),
+	url("../font/PlayfairDisplay-Bold.woff2") format("woff2"),
+	url("../font/PlayfairDisplay-Bold.woff") format("woff");
+}

@@ -1,0 +1,8 @@
+// SVG Icon (iconName, class?, width?, height?, id?, path?)
+mixin svgIcon(icon, className='', width='32', height='32', id='', path='assets/img/sprite.svg')
+    svg.svg-icon(class=className, id=id, width=width, height=height)
+        use(xlink:href=path+'#'+icon)
+
+// Image (name, alt?, class?, width?, height?, id?, rootDirectory?)
+mixin image(path, alt='', className='', width='', height='', id='', directory='assets/img/')
+    img(src=directory+path, alt=alt, class=className, id=id, width=width, height=height)

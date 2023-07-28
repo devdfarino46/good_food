@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+}
+
+span {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+}
+
+.svg-icon {
+    fill: inherit;
+    stroke: inherit;
+}

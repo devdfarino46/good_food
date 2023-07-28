@@ -1,0 +1,5 @@
+package-lock.json
+node_modules/
+dist/*
+!dist/libs/
+dist/index.html
