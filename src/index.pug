@@ -9,7 +9,7 @@ html(lang="en")
         title F.palace
         link(rel="stylesheet", href="assets/css/main.min.css")
         link(rel="shortcut icon", href="assets/img/logo.svg", type="image/x-icon")
-    body 
+    body.whatcher
         .wrapper
             header.section.header
                 +decor('header.webp', '251', '177', 'header__decor')
@@ -59,7 +59,7 @@ html(lang="en")
 
                 section.section.section_bg_gradient.about
                      .container.about__container
-                        +image('bg-decor/about.webp', '', 'about__image', '781', '597')
+                        +image('about.webp', '', 'about__image', '781', '597')
                         .about__main-wrapper
                             h2.section__title.about__title About us
                             p.section__title-large.about__title-large Simple Way of Eating Delicious
@@ -247,3 +247,5 @@ html(lang="en")
                             |
                             | by  Sajib Das Supriyo for Twinkle Creative. 
                             | All rights reserved
+
+        script(src="assets/js/main.min.js") 
