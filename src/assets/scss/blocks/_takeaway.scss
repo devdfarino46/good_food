@@ -1,0 +1,55 @@
+.takeaway {
+    padding: 77px 0 80px;
+    margin-bottom: 137px;
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    &__main-wrapper {
+        position: relative;
+        z-index: 2;
+        max-width: 444px;
+    }
+
+    &__image {
+        position: absolute;
+        z-index: 1;
+        top: -101px;
+        left: 0;
+    }
+
+    &__title {
+        margin-bottom: 23px;
+    }
+
+    &__title-large {
+        margin-bottom: 18px;
+    }
+
+    &__descr {
+        margin-bottom: 41px;
+    }
+
+    &__installs-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+    }
+
+    @media (max-width: 1050px) {
+        &__container {
+            justify-content: flex-start;
+        }
+
+        &__main-wrapper {
+            max-width: 600px;
+        }
+
+        &__image {
+            display: none;
+        }
+    }
+}

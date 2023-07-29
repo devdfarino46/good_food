@@ -4,10 +4,13 @@
     &__container {
         display: flex;
         justify-content: flex-end;
+        position: relative;
     }
 
     &__main-wrapper {
         max-width: 424px;
+        position: relative;
+        z-index: 2;
     }
 
     &__title {
@@ -24,13 +27,15 @@
         max-width: 497px;
     }
 
-    .bg-decor__image {
+    &__image {
+        position: absolute;
         left: -111px;
-        top: 89px;
+        top: -53px;
+        z-index: 1;
     }
 
-    @media (max-width: 1150px) {
-        .bg-decor {
+    @media (max-width: 1050px) {
+        &__image {
             display: none;
         }
 

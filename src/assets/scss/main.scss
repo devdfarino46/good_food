@@ -63,12 +63,22 @@
 }
 
 // Block import
-@import 'blocks/header';
-@import 'blocks/nav';
-@import 'blocks/footer';
 @import 'blocks/button';
 @import 'blocks/logo';
 @import 'blocks/service';
+@import 'blocks/food';
+@import 'blocks/price';
+@import 'blocks/rating';
+@import 'blocks/arrow';
+@import 'blocks/specialist';
+
+//Sections import
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/footer';
 @import 'blocks/hero';
 @import 'blocks/about';
 @import 'blocks/features';
+@import 'blocks/recipes';
+@import 'blocks/takeaway';
+@import 'blocks/testim';

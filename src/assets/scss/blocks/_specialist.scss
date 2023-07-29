@@ -1,0 +1,20 @@
+.specialist {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__name {
+        color: #2E2E2E;
+        font-family: Gilroy;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px; /* 125% */
+    }
+
+    &__category {
+        color: #675959;
+        font-size: 14px;
+        font-weight: 450;
+        line-height: 22px; /* 157.143% */
+    }
+}

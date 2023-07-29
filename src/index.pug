@@ -32,34 +32,33 @@ html(lang="en")
             main.page
                 section.section.hero
                     .container.hero__container
-                        .bg-decor
-                            +image('bg-decor/hero.webp', '', 'bg-decor__image')
+                        .hero__main-wrapper
+                            h2.section__title._line_leftbottom.hero__subtitle Restaurant
+                            h1.hero__title 
+                                | Good food #[br]
+                                | Good mood
+                            p.section__descr.hero__descr
+                                | The food palace is an neighborhood restaurent 
+                                | serving seasonal global cuisine driven by the faire.
+                            
+                            a.button.hero__btn(href="#") Explore food menu
 
-                        h2.section__title._line_leftbottom.hero__subtitle Restaurant
-                        h1.hero__title 
-                            | Good food #[br]
-                            | Good mood
-                        p.section__descr.hero__descr
-                            | The food palace is an neighborhood restaurent 
-                            | serving seasonal global cuisine driven by the faire.
-                        
-                        a.button.hero__btn(href="#") Explore food menu
+                            ul.hero__social-list
+                                li.hero__social-item
+                                    a.hero__social-link(href="$", title="facebook")
+                                        +svgIcon('facebook', 'hero__social-icon', '9', '16')
+                                li.hero__social-item
+                                    a.hero__social-link(href="$", title="insta")
+                                        +svgIcon('insta', 'hero__social-icon', '16', '16')
+                                li.hero__social-item
+                                    a.hero__social-link(href="$", title="twitter")
+                                        +svgIcon('twitter', 'hero__social-icon', '19', '16')
 
-                        ul.hero__social-list
-                            li.hero__social-item
-                                a.hero__social-link(href="$", title="facebook")
-                                    +svgIcon('facebook', 'hero__social-icon', '9', '16')
-                            li.hero__social-item
-                                a.hero__social-link(href="$", title="insta")
-                                    +svgIcon('insta', 'hero__social-icon', '16', '16')
-                            li.hero__social-item
-                                a.hero__social-link(href="$", title="twitter")
-                                    +svgIcon('twitter', 'hero__social-icon', '19', '16')
+                        +image('hero.webp', '', 'hero__image', '879', '625')
 
                 section.section.section_bg_gradient.about
                      .container.about__container
-                        .bg-decor
-                            +image('bg-decor/about.webp', '', 'bg-decor__image')
+                        +image('bg-decor/about.webp', '', 'about__image', '781', '597')
                         .about__main-wrapper
                             h2.section__title.about__title About us
                             p.section__title-large.about__title-large Simple Way of Eating Delicious
@@ -94,6 +93,90 @@ html(lang="en")
                                     | Keep healthy food readily available. 
                                     | When you get hungry, you’re more likely to 
 
+                section.section.section_bg_gradient.recipes
+                    .container.recipes__container
+                        h2.section__title.recipes__title Recipes
+                        p.section__title-large.recipes__title-large Most Popular Items
+                        ul.recipes__foods-list
+                            li.food
+                                +image('foods/1.webp', '', 'food__image', '330', '231')
+                                .food__text-wrapper
+                                    .food__title-wrapper
+                                        p.food__title Flame-boiled dish
+                                        p.rating
+                                            +svgIcon('star', 'rating__icon', '11', '11')
+                                            | 8.5
+                                    .food__price-wrapper
+                                        button.button.button_theme_addto ADD TO CART
+                                        p.price.food__price $ 19.99
+                            li.food
+                                +image('foods/2.webp', '', 'food__image', '330', '231')
+                                .food__text-wrapper
+                                    .food__title-wrapper
+                                        p.food__title Peach Melba dish
+                                        p.rating
+                                            +svgIcon('star', 'rating__icon', '11', '11')
+                                            | 9.5
+                                    .food__price-wrapper
+                                        button.button.button_theme_addto ADD TO CART
+                                        p.price.food__price $ 20.99
+                            li.food
+                                +image('foods/3.webp', '', 'food__image', '330', '231')
+                                .food__text-wrapper
+                                    .food__title-wrapper
+                                        p.food__title Delmonico Steak dish
+                                        p.rating
+                                            +svgIcon('star', 'rating__icon', '11', '11')
+                                            | 8.0
+                                    .food__price-wrapper
+                                        button.button.button_theme_addto ADD TO CART
+                                        p.price.food__price $ 18.99
+
+                        a.button(href="#") See more recipes
+
+                section.section.takeaway
+                    .container.takeaway__container
+                        +image('takeaway.webp', '', 'takeaway__image', '612', '539')
+
+                        .takeaway__main-wrapper
+                            h2.section__title.takeaway__title Take away
+                            p.section__title-large.takeaway__title-large
+                                | Simple Way To #[br] Order Your Food
+                            p.section__descr.takeaway__descr
+                                | Keep healthy food readily available. 
+                                | When you get hungry, you’re more likely 
+                                | to eat the first thing you see on the 
+                                | counter or in the cupboard.
+                            .takeaway__installs-wrapper
+                                a.button.button_theme_install(href="#")
+                                    +image('icons/install-applestore.webp', 'Install via App Store', 'button_theme_install__icon', '150', '49')
+                                a.button.button_theme_install(href="#")
+                                    +image('icons/install-googleplay.webp', 'Install via Google Play', 'button_theme_install__icon', '153', '52')
+
+                section.section.testim
+                    .container.testim__container
+                        .testim__main-wrapper
+                            h2.section__title.testim__title Testimonial
+                            p.section__title-large.testim__title-large That’s what our Client Says
+                            p.section__descr.testim__descr 
+                                | “Food palace is an awesome place. Food is everything we are. 
+                                | It’s an extension of nationalist feeling, ethnic feeling, 
+                                | your personal history, your province”
+                            .testim__specs-wrapper
+                                ul.testim__specs-list
+                                    li.specialist
+                                        p.specialist__name Jessica Parker
+                                        p.specialist__category Product Designer @ Kitty
+
+                                .testim__specs-nav-btns
+                                    button.button.button_theme_arrow
+                                        +svgIcon('arrow', 'arrow arrow_left arrow_gray', '14', '14')
+                                    button.button.button_theme_arrow
+                                        +svgIcon('arrow', 'arrow', '31', '31')
+
+                        +image('testim.webp', '', 'testim__image', '745', '544')
+                                
+                                
 
             footer.section.section_bg_gradient.footer
                 .container.footer__container

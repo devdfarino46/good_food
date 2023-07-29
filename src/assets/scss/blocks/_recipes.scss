@@ -1,0 +1,33 @@
+.recipes {
+    padding: 86px 0 26px;
+    margin-bottom: 131px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 13px;
+    }
+
+    &__title-large {
+        margin-bottom: 73px;
+        font-weight: 600;
+    }
+
+    &__foods-list {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px 54px;
+        margin-bottom: 72px;
+    }
+
+    @media (max-width: 1200px) {
+        &__foods-list {
+            flex-direction: column;
+        }
+    }
+}

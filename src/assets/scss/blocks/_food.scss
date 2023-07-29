@@ -1,0 +1,45 @@
+.food {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 12px 12px 5px;
+    box-sizing: border-box;
+    max-width: 354px;
+    border-radius: 8px;
+    background: #fff;
+    filter: drop-shadow(0px 40px 80px rgba(255, 148, 1, 0.15));
+
+    &__image {
+        border-radius: 8px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 330px;
+    }
+
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: #2E2E2E;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px; /* 300% */
+    }
+
+    &__price-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__price {
+        margin-top: -18px;
+    }
+}

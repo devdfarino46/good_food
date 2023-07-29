@@ -12,4 +12,29 @@
     line-height: 30px; /* 150% */
     text-transform: capitalize;
     filter: drop-shadow(0px 20px 40px rgba(255, 148, 1, 0.20));
+
+    &_theme_addto {
+        color: #696969;
+        font-size: 10px;
+        line-height: normal;
+        font-weight: 500;
+
+        padding: 7px 14px;
+        background: rgba(196, 196, 196, 0.26);
+        filter: none;
+    }
+
+    &_theme_install {
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+        filter: none;
+    }
+
+    &_theme_arrow {
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+        filter: none;
+    }
 }
