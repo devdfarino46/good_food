@@ -12,6 +12,7 @@ html(lang="en")
     body 
         .wrapper
             header.section.header
+                +decor('header.webp', '251', '177', 'header__decor')
                 .container.header__container
                     .logo
                         +image('logo.svg', 'Logo', 'logo__icon', '25', '25')
@@ -69,6 +70,8 @@ html(lang="en")
                             a.button(href="#") Explore our story
 
                 section.section.features
+                    +decor('features-left.webp', '267', '178', 'features__decor _left')
+                    +decor('features-right.webp', '479', '319', 'features__decor _right')
                     .container.features__container
                         h2.section__title.features__title Features
                         p.section__title-large.features__title-large Our Awesome Services
@@ -94,6 +97,7 @@ html(lang="en")
                                     | When you get hungry, you’re more likely to 
 
                 section.section.section_bg_gradient.recipes
+                    +decor('recipes.webp', '86', '95', 'recipes__decor')
                     .container.recipes__container
                         h2.section__title.recipes__title Recipes
                         p.section__title-large.recipes__title-large Most Popular Items
@@ -135,6 +139,8 @@ html(lang="en")
                         a.button(href="#") See more recipes
 
                 section.section.takeaway
+                    +decor('takeaway-left.webp', '404', '404', 'takeaway__decor _left')
+                    +decor('takeaway-right.webp', '511', '340', 'takeaway__decor _right')
                     .container.takeaway__container
                         +image('takeaway.webp', '', 'takeaway__image', '612', '539')
 
@@ -154,6 +160,7 @@ html(lang="en")
                                     +image('icons/install-googleplay.webp', 'Install via Google Play', 'button_theme_install__icon', '153', '52')
 
                 section.section.testim
+                    +decor('testim.webp', '117', '109', 'testim__decor')
                     .container.testim__container
                         .testim__main-wrapper
                             h2.section__title.testim__title Testimonial
@@ -175,10 +182,9 @@ html(lang="en")
                                         +svgIcon('arrow', 'arrow', '31', '31')
 
                         +image('testim.webp', '', 'testim__image', '745', '544')
-                                
-                                
-
+                          
             footer.section.section_bg_gradient.footer
+                +decor('footer.webp', '295', '358', 'footer__decor')
                 .container.footer__container
                     .footer__main-wrapper
                         ul.footer__info

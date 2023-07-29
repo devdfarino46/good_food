@@ -49,17 +49,12 @@
     }
 }
 
-.bg-decor {
+.decor {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-
-    &__image {
-        position: absolute;
-    }
+    background-color: transparent;
+    background-position: left 0 top 0;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 // Block import

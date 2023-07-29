@@ -23,6 +23,19 @@
         gap: 30px 118px;
     }
 
+    &__decor {
+        &._left {
+            top: 17px;
+            left: -60px;
+            transform: rotate(26.39deg);
+        }
+
+        &._right {
+            top: -67px;
+            right: -220px;
+        }
+    }
+
     @media (max-width: 1010px) {
         &__services-list {
             flex-direction: column;

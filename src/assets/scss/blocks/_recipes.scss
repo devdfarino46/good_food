@@ -25,6 +25,12 @@
         margin-bottom: 72px;
     }
 
+    &__decor {
+        left: 50%;
+        transform: translateX(286px);
+        top: 95px;
+    }
+
     @media (max-width: 1200px) {
         &__foods-list {
             flex-direction: column;

@@ -16,4 +16,10 @@
             gap: 38px;
         }
     }
+
+    &__decor {
+        left: 50%;
+        transform: translateX(-50%);
+        top: -7px;
+    }
 }

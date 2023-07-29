@@ -39,7 +39,23 @@
         gap: 23px;
     }
 
+    &__decor {
+        &._left {
+            top: -176px;
+            left: -114px;
+        }
+
+        &._right {
+            top: -166px;
+            right: -132px;
+        }
+    }
+
     @media (max-width: 1050px) {
+        &__decor._left {
+            display: none;
+        }
+
         &__container {
             justify-content: flex-start;
         }

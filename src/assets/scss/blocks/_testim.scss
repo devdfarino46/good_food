@@ -1,6 +1,5 @@
 .testim {
-    margin-bottom: 171px;
-    padding: 53px 0 57px;
+    padding: 53px 0 171px;
 
     &__container {
         display: flex;
@@ -47,6 +46,11 @@
         z-index: 1;
         right: -99px;
         top: -53px;
+    }
+
+    &__decor {
+        bottom: -51px;
+        right: -12px;
     }
 
     @media (max-width: 1050px) {

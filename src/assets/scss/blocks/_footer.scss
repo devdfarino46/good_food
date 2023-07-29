@@ -87,6 +87,7 @@
         font-weight: 450;
         line-height: 120%; /* 14.4px */
         text-align: center;
+        justify-content: center;
 
         ._like-icon {
             fill: transparent;
@@ -95,7 +96,16 @@
         }
     }
 
+    &__decor {
+        top: -18px;
+        left: -23px;
+    }
+
     @media (max-width: 1170px) {
+        &__decor {
+            display: none;
+        }
+
         &__main-wrapper {
             flex-direction: column;
         }
